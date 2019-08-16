@@ -14,7 +14,6 @@ def sh(event,x,y,flag,para):
     if event == cv2.EVENT_LBUTTONDOWN:
         drawing = True
         (ix, iy) = x, y
-
     elif event == cv2.EVENT_MOUSEMOVE:
         if drawing == True:
             input=cv2.getTrackbarPos('input',windowName)
